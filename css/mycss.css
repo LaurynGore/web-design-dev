@@ -22,3 +22,15 @@ body {
 	background-color: white;
 	border-style: inset;
 }
+#button{
+	border-style: solid;
+	background-color: skyblue;
+	border-color:skyblue;
+	color: black;
+}
+table{
+	width: 30em;
+}
+table, th, td {
+	border: 1px solid black;
+  }
