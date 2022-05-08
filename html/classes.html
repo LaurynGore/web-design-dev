@@ -10,7 +10,174 @@
 </head>
 
 <body>
+    <main>
+        <header class="ui header center aligned">
+            <section class="hero">
+                <img src="../images/logo.jpg" class="ui small image">
+                <h1 id="title">BA (Hons) in Early Childhood Care and Education</h1>
+            </section>
+            <section>
+                <nav id="main-menu" class="ui compact secondary menu">
+                    <a class="item" href="index.html">Home</a>
+                    <a class="item" href="course.html">The Course</a>
+                    <a class="item" href="wit.html">WIT</a>
+                    <a class="item" href="waterford.html">Waterford</a>
+                </nav>
+            </section>
+        </header>
+        <h2>Tabs</h2>
+        <p>Click on the buttons inside the tabbed menu:</p>
 
+        <div class="tab">
+            <button class="tablinks" onclick="openYear(event, 'Year1')">Year 1</button>
+            <button class="tablinks" onclick="openYear(event, 'Year2')">Year 2</button>
+            <button class="tablinks" onclick="openYear(event, 'Year3')">Year 3</button>
+            <button class="tablinks" onclick="openYear(event, 'Year4')">Year 4</button>
+        </div>
+
+        <div id="Year1" class="tabcontent">
+            <table>
+                <tr>
+                    <th><b>Semester 1</b></th>
+                    <th><b>Semester 2</b></th>
+                </tr>
+                <tr>
+                    <th>Critical Thinking and Academic Skills</th>
+                    <th>Child Developmental Psychology 1</th>
+                </tr>
+                <tr>
+                    <th>Early Years Pedagogies Children as Learners</th>
+                    <th>Children and Social Interaction</th>
+                </tr>
+                <tr>
+                    <th>History of Care in Irish Social Policy</th>
+                    <th>Early Years Education: Methods and Practice</th>
+                </tr>
+                <tr>
+                    <th>Introduction to Psychology</th>
+                    <th>Introduction to Research</th>
+                </tr>
+                <tr>
+                    <th>Introduction to Sociological Problems</th>
+                    <th>Irish Family Policy</th>
+                <tr>
+                    <th>Personal and Professional Development: Early Childhood Studies 1</th>
+                    <th>Personal and Professional Development: Early Childhood Studies 2</th>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="Year2" class="tabcontent">
+            <table>
+                <tr>
+                    <th><b>Semester 1</b></th>
+                    <th><b>Semester 2</b></th>
+                </tr>
+                <tr>
+                    <th>Practice Placement: Early Childhood Studies 1</th>
+                    <th>Child Development Psychology 2</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Understanding Gender</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Irish Early Childhood Education Policies</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Introduction to Research</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Irish Family Policy</th>
+                <tr>
+                    <th></th>
+                    <th>Personal and Professional Development: Early Childhood Studies 1</th>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="Year3" class="tabcontent">
+            <table>
+                <tr>
+                    <th><b>Semester 1</b></th>
+                    <th><b>Semester 2</b></th>
+                </tr>
+                <tr>
+                    <th>Early Years Curriculum, Quality and Practice</th>
+                    <th>Practice Placement: Early Childhood Studies 2</th>
+                </tr>
+                <tr>
+                    <th>Early Learning and Play</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Children's Rights, Citizenship and Social Policy</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Personal and Professional Development: Early Childhood Studies 4</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Comparative Early Years Education and Care</th>
+                    <th></th>
+                <tr>
+                    <th>Children with Additional Needs</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+        <div id="Year4" class="tabcontent">
+            <table>
+                <tr>
+                    <th><b>Semester 1</b></th>
+                    <th><b>Semester 2</b></th>
+                </tr>
+                <tr>
+                    <th>Direct Work with Children, Parents and Staff</th>
+                    <th>Practice Placement: Early Childhood Studies 3</th>
+                </tr>
+                <tr>
+                    <th>Children and the Law</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Social Research Methods</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Child Health and Wellbeing</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Managing Early Years Contexts</th>
+                    <th></th>
+                <tr>
+                    <th>Diversity and Inclusion in Early Childhood</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+        <script>
+            function openYear(evt, year) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(year).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
 </body>
 
 </html>
