@@ -1,0 +1,24 @@
+/* CSS Document */
+body {
+	padding: 0em 1em;
+	background-color: #C3B8B8;
+}
+.hero {
+	background: url("../images/header2.png");
+	border-style: solid;
+	border-color: gray;
+}
+#title {
+	color: green;
+	position: absolute;
+	top: 4%;
+	left: 25%;
+}
+#main-menu {
+		border-style: none solid solid;
+		border-color: gray;
+}
+.intro {
+	background-color: white;
+	border-style: inset;
+}
